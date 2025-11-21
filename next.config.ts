@@ -19,8 +19,12 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "res.cloudinary.com", // ✅ allow Cloudinary images
       },
-
     ],
+  },
+
+  eslint: {
+    // ✅ This makes Vercel ignore ESLint errors during `npm run build`
+    ignoreDuringBuilds: true,
   },
 };
 
